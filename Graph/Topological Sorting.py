@@ -75,6 +75,13 @@ class Graph:
     def addEdge(self, u, v):
         self.graph[u].append(v)
 
+
+# 5 --> 0 <-- 4
+# |           V
+# |           |
+# v           |
+# 2 --> 3 --> 1
+
 g= Graph(6)
 g.addEdge(5, 2)
 g.addEdge(5, 0)
