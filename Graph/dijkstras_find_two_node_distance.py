@@ -3,16 +3,16 @@ from collections import defaultdict
 
 def dijkstras(start, end, graph):
     distance = [False] * (len(graph))
-    heap = [[0, start, [0]]]
+    heap = [[0, start]]
     while heap:
-        dis, curr, path = heappop(heap)
+        dis, curr = heappop(heap)
         if distance[curr]: continue
-        if curr == end: return path
+        if curr == end: return dis
         distance[curr] = dis
         for ngr in graph[curr].keys():
             if not distance[ngr]:
                 ngr_dis = dis + graph[curr][ngr]
-                heappush(heap, [ngr_dis, ngr, path + [ngr]])
+                heappush(heap, [ngr_dis, ngr])
         print distance
     return distance
 
@@ -32,13 +32,13 @@ graph = {
 print dijkstras(0,8, graph)
 # print dijkstra
 
-Output: 
-###################################################################
-[0, False, False, False, False, False, False, False, False]
-[0, 4, False, False, False, False, False, False, False]
-[8, 4, False, False, False, False, False, False, False]
-[8, 4, False, False, False, False, False, 8, False]
-[8, 4, False, False, False, False, 9, 8, False]
-[8, 4, False, False, False, 11, 9, 8, False]
-[8, 4, 12, False, False, 11, 9, 8, False]
-[0, 1, 2, 8]
+# Output:
+# #################################
+# [0, False, False, False, False, False, False, False, False]
+# [0, 4, False, False, False, False, False, False, False]
+# [8, 4, False, False, False, False, False, False, False]
+# [8, 4, False, False, False, False, False, 8, False]
+# [8, 4, False, False, False, False, 9, 8, False]
+# [8, 4, False, False, False, 11, 9, 8, False]
+# [8, 4, 12, False, False, 11, 9, 8, False]
+# 14

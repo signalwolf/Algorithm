@@ -1,4 +1,4 @@
-reference: https://www.geeksforgeeks.org/dijkstras-algorithm-for-adjacency-list-representation-greedy-algo-8/
+# reference: https://www.geeksforgeeks.org/dijkstras-algorithm-for-adjacency-list-representation-greedy-algo-8/
 from heapq import *
 from collections import defaultdict
 
@@ -32,16 +32,16 @@ graph = {
 print dijkstra(0, graph)
 # print dijkstra
 
-Output:
+# Output:
 #####################################################
-[0, False, False, False, False, False, False, False, False]
-[0, 4, False, False, False, False, False, False, False]
-[8, 4, False, False, False, False, False, False, False]
-[8, 4, False, False, False, False, False, 8, False]
-[8, 4, False, False, False, False, 9, 8, False]
-[8, 4, False, False, False, 11, 9, 8, False]
-[8, 4, 12, False, False, 11, 9, 8, False]
-[8, 4, 12, False, False, 11, 9, 8, 14]
-[8, 4, 12, 19, False, 11, 9, 8, 14]
-[8, 4, 12, 19, 21, 11, 9, 8, 14]
-[8, 4, 12, 19, 21, 11, 9, 8, 14]
+# [0, False, False, False, False, False, False, False, False]
+# [0, 4, False, False, False, False, False, False, False]
+# [8, 4, False, False, False, False, False, False, False]
+# [8, 4, False, False, False, False, False, 8, False]
+# [8, 4, False, False, False, False, 9, 8, False]
+# [8, 4, False, False, False, 11, 9, 8, False]
+# [8, 4, 12, False, False, 11, 9, 8, False]
+# [8, 4, 12, False, False, 11, 9, 8, 14]
+# [8, 4, 12, 19, False, 11, 9, 8, 14]
+# [8, 4, 12, 19, 21, 11, 9, 8, 14]
+# [8, 4, 12, 19, 21, 11, 9, 8, 14]

@@ -1,4 +1,4 @@
-https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/
+# https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/
 
 # insert by position
 
@@ -45,7 +45,7 @@ printLinked_list(insert(head, 0))
 head = create_linked_list([1,3,4,7,8,10])
 printLinked_list(insert(head, 5))
 
-Output:
-[1, 3, 4, 7, 8, 10, 100]
-[0, 1, 3, 4, 7, 8, 10]
-[1, 3, 4, 5, 7, 8, 10]
+# Output:
+# [1, 3, 4, 7, 8, 10, 100]
+# [0, 1, 3, 4, 7, 8, 10]
+# [1, 3, 4, 5, 7, 8, 10]
