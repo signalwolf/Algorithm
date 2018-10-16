@@ -2,16 +2,15 @@ reference: https://www.geeksforgeeks.org/dijkstras-algorithm-for-adjacency-list-
 from heapq import *
 from collections import defaultdict
 
-def dijkstra(start, graph):
-    distance = [float('inf')] * (len(graph))
-    # visited = [False] * len(graph)
+def main(start, graph):
+    distance = [False] * (len(graph))
     heap = [[0, start]]
     while heap:
         dis, curr = heappop(heap)
-        if distance[curr] != float('inf'): continue
+        if distance[curr]: continue
         distance[curr] = dis
         for ngr in graph[curr].keys():
-            if distance[ngr] == float('inf'):
+            if not distance[ngr]:
                 ngr_dis = dis + graph[curr][ngr]
                 heappush(heap, [ngr_dis, ngr])
         print distance
