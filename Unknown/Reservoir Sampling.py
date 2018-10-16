@@ -1,3 +1,7 @@
+# coding=utf-8
+
+# 解决的问题：大数据量的情况下随机选择K 个数的情况。
+
 # mainly used for randomly select from an huge amount of data which can't fit into the memory like
 # facebook, google's request.
 

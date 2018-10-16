@@ -9,11 +9,37 @@
 
 # time complexity: O(V + E)
 
+# 算法：
+# 大致就是确保每一个有neighbor node没有visit过的node都在其neighbor node后面加入。故使用queue便能够解决这个问题。
+
+# 基本原型：DFS
+
+# 证明：
+# 考虑任意的边v->w，当调用dfs(v)的时候，有如下三种情况：
+#
+# dfs(w)还没有被调用，即w还没有被mark，此时会调用dfs(w)，然后当dfs(w)返回之后，dfs(v)才会返回 --> 故而在最后的queue中，V 在 W之前
+# dfs(w)已经被调用并返回了，即w已经被mark --> 此时V在调用过W的node之前，故而也在W之前
+# dfs(w)已经被调用但是在此时调用dfs(v)的时候还未返回 --> 不可能情况，除非有环
+
+
 # only solvable for Directed Acyclic Graph (DAG).
 # define:
 # 在图论中，由一个有向无环图的顶点组成的序列，当且仅当满足下列条件时，称为该图的一个拓扑排序（英语：Topological sorting）。
 # 1. 每个顶点出现且只出现一次；
 # 2. 若A在序列中排在B的前面，则在图中不存在从B到A的路径。
+
+# Wiki: pseudocode:
+# L ← Empty list that will contain the sorted nodes
+# S ← Set of all nodes with no outgoing edges
+# for each node n in S do
+#     visit(n)
+# function visit(node n)
+#     if n has not been visited yet then
+#         mark n as visited
+#         for each node m with an edgefrom m to ndo
+#             visit(m)
+#         add n to L
+
 
 # Solveable using DFS:
 from collections import defaultdict, deque
