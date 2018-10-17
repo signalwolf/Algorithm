@@ -10,32 +10,42 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="default_dict.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/default_dict.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="133. Clone Graph.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Leetcode_by_type/Graph/133. Clone Graph.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
+              <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dict.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Python/dict.py">
+      <file leaf-file-name="399. Evaluate Division.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Leetcode_by_type/Graph/399. Evaluate Division.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="68" column="68" lean-forward="false" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
+            <state relative-caret-position="561">
+              <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="for else.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Python/for else.py">
+      <file leaf-file-name="Topological Sorting.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Graph/Topological Sorting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="62">
+              <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="note.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/note.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -60,24 +70,28 @@
         <option value="$PROJECT_DIR$/Graph/dijkstras_find_two_node_distance.py" />
         <option value="$PROJECT_DIR$/Linked_list/Insert a node in sorted linked list.py" />
         <option value="$PROJECT_DIR$/Linked_list/Delete a given node in Linked List.py" />
-        <option value="$PROJECT_DIR$/note.py" />
         <option value="$PROJECT_DIR$/Unknown/Reservoir Sampling.py" />
         <option value="$PROJECT_DIR$/Graph/Dijkstra_find_all.py" />
         <option value="$PROJECT_DIR$/Graph/Floyd Warshall.py" />
         <option value="$PROJECT_DIR$/Graph/Union_ Find.py" />
-        <option value="$PROJECT_DIR$/Graph/Topological Sorting.py" />
         <option value="$PROJECT_DIR$/Graph/Union_Find.py" />
         <option value="$PROJECT_DIR$/Python/default_dict.py" />
         <option value="$PROJECT_DIR$/Python/dict.py" />
         <option value="$PROJECT_DIR$/Python/for else.py" />
+        <option value="$PROJECT_DIR$/../Leetcode_by_type/Graph/133. Clone Graph.py" />
+        <option value="$PROJECT_DIR$/note.py" />
+        <option value="$PROJECT_DIR$/../Leetcode_by_type/Graph/399. Evaluate Division.py" />
+        <option value="$PROJECT_DIR$/Graph/Topological Sorting.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1694" />
+    <option name="x" value="64" />
+    <option name="y" value="-8" />
+    <option name="width" value="1059" />
     <option name="height" value="1017" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -93,8 +107,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,6 +136,15 @@
               <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="Unknown" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode_by_type" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Leetcode_by_type" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -129,7 +152,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Leetcode_by_type" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -144,8 +167,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.for else">
-    <configuration name="Floyd Warshall" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Topological Sorting">
+    <configuration name="Topological Sorting" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -157,7 +180,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Algorithm" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Graph/Floyd Warshall.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Graph/Topological Sorting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -231,19 +254,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.Floyd Warshall" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Union_Find" />
-      <item index="2" class="java.lang.String" itemvalue="Python.default_dict" />
-      <item index="3" class="java.lang.String" itemvalue="Python.dict" />
-      <item index="4" class="java.lang.String" itemvalue="Python.for else" />
+      <item index="0" class="java.lang.String" itemvalue="Python.Union_Find" />
+      <item index="1" class="java.lang.String" itemvalue="Python.default_dict" />
+      <item index="2" class="java.lang.String" itemvalue="Python.dict" />
+      <item index="3" class="java.lang.String" itemvalue="Python.for else" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Topological Sorting" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.for else" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dict" />
-        <item index="2" class="java.lang.String" itemvalue="Python.default_dict" />
-        <item index="3" class="java.lang.String" itemvalue="Python.Union_Find" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Floyd Warshall" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Topological Sorting" />
+        <item index="1" class="java.lang.String" itemvalue="Python.for else" />
+        <item index="2" class="java.lang.String" itemvalue="Python.dict" />
+        <item index="3" class="java.lang.String" itemvalue="Python.default_dict" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Union_Find" />
       </list>
     </recent_temporary>
   </component>
@@ -261,19 +284,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25244498" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2228145" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5021322" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34042552" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30985916" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -294,6 +316,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Python/default_dict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/dict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="68" lean-forward="false" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/for else.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Linked_list/Insert a node in sorted linked list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -327,7 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -335,7 +380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -345,23 +389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Graph/Topological Sorting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="82" column="15" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="82" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/note.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -369,6 +396,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/note.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/for else.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/dict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="68" column="68" lean-forward="false" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
           <folding />
         </state>
       </provider>
@@ -381,18 +432,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/dict.py">
+    <entry file="file://$PROJECT_DIR$/../Leetcode_by_type/Graph/133. Clone Graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="68" column="68" lean-forward="false" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python/for else.py">
+    <entry file="file://$PROJECT_DIR$/../Leetcode_by_type/Graph/399. Evaluate Division.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="561">
+          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph/Topological Sorting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
           <folding />
         </state>
       </provider>
