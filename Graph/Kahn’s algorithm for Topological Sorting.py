@@ -4,6 +4,8 @@
 # 它所利用的关键点在于说：对于一个DAC来说，必然有一个node的in degreee 为0作为起点；必然有一个node的out degree为0作为终点。
 # 当然可能有很多的这样的起点或者终点，例如下面的例子中有两个起点，2个终点。
 
+# 我们始终在找in degree为0的点，不断的加入到queue中。
+
 from collections import defaultdict, deque
 def topological_sort(graph, n):
     in_degrees = [0] * n
