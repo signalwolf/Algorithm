@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     res, stop_flag = 0, False
 
