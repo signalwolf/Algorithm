@@ -8,3 +8,5 @@
 #    面对复杂的问题，思考一个更加简单的问题并且从中得到思路。例如310。
 # 5. 不要忘记了initial node 的方法
 # 6. Tree delete node 的方法忘记了
+# 7. Quick sort中的random shuffle
+# 8. Very careful about 0, it is False/None as well.

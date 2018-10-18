@@ -32,17 +32,43 @@ def merge_sort(array, start, end):
     if j == len(right): res += left[i:]
     return res
 
-def bubble_sort
+def bubble_sort(array):
+    res = array[::]
+    for i in xrange(len(res)):
+        for j in xrange(i + 1, len(res)):
+            if res[i] > res[j]:
+                res[i], res[j] = res[j], res[i]
+    return res
+
+# selection sort suitable for duplicated sets?
+def selection_sort(array):
+    res = [None] * len(array)
+    for i in xrange(len(array)):
+        index = 0
+        for j in xrange(len(array)):
+            if array[j] < array[i]:
+                index += 1
+        while res[index] != None:
+            index += 1
+        res[index] = array[i]
+    # print res
+    return res
+
 
 def main():
-    array =  arr_generator(10, 0, 100)
-    print array
+    array =  arr_generator(1000, 0, 100)
+    # print array
     merge = merge_sort(array, 0, len(array))
     print merge == sorted(array)
     quick = quick_sort(array)
     print quick == sorted(array)
     bubble = bubble_sort(array)
     print bubble == sorted(array)
+    # array = list(set(array))
+    # array += [array[-5]]
+    selection = selection_sort(array)
+    # print selection == sorted(selection)
+    print selection == sorted(array)
 
 def arr_generator(n, start, end):
     res = []
