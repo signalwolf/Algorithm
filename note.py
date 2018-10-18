@@ -10,3 +10,4 @@
 # 6. Tree delete node 的方法忘记了
 # 7. Quick sort中的random shuffle
 # 8. Very careful about 0, it is False/None as well.
+# 9. 使用while语句来遍历整个node的情况
