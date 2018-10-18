@@ -11,16 +11,25 @@ class BSTNode(object):
 
 
 def insert_BST(root, val):
-    if root == None: return None
+    if root == None: return BSTNode(val)
+    if root.val > val:
+        root.left = insert_BST(root.left, val)
+    elif root.val < val:
+        root.right = insert_BST(root.right, val)
+    return root
 
-    if root.val > val and not root.left:
-        root.left = BSTNode(val)
-    elif root.val > val and root.left:
-        insert_BST(root.left, val)
-    elif root.val < val and root.right:
-        insert_BST(root.right, val)
-    elif root.val < val and not root.right:
-        root.right = BSTNode(val)
+def delete_BST(root, val):
+    if not root: return root
+
+    if root.val == val:
+        if not root.left: return root.right
+        if not root.right: return root.left
+
+        
+
+
+
+
 
 
 def buildBST(arr, start, end):
@@ -51,8 +60,6 @@ def main():
             print insert_val, inorder_traversal(root)
 
     print sorted(inorder_traversal(root)) == inorder_traversal(root)
-
-
 
 
 
