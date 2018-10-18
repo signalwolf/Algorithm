@@ -25,7 +25,7 @@ def delete_BST(root, val):
         if not root.left: return root.right
         if not root.right: return root.left
 
-        
+
 
 
 
