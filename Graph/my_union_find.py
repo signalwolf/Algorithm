@@ -25,6 +25,10 @@ g.addEdge(2,4)
 g.addEdge(3,5)
 g.addEdge(3,6)
 
+def union_find(graph, n):
+    visited = [False] * n
+
+
 
 
 print g.graph

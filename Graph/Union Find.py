@@ -41,6 +41,7 @@ def find(id, p, q):
 def main():
     n = 10
     pairs = generate(n/2)
+    pairs = (1, 5), (4, 0),  (4, 3), (2, 0)
     print pairs
     id1 = union_find_quick_find(pairs)
     id2 = union_find_quick_union(pairs)
