@@ -23,7 +23,7 @@ g.addEdge(1,4)
 g.addEdge(1,6)
 g.addEdge(2,4)
 g.addEdge(3,5)
-#g.addEdge(3,6)
+g.addEdge(3,6)
 
 
 
