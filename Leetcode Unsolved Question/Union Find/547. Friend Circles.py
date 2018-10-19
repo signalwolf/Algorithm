@@ -1,4 +1,25 @@
+# coding=utf-8
 # union find on adjacent matrix format
+
+# 千万注意的是不要去改双层loop中的i,j.
+# 因为如果在j循环中改了i，那么由于不会触发i循环，故而在接下来的j循环中i都改掉了
+
+for i in xrange(3):
+    for j in xrange(3):
+        if j == 2: i = 5
+        print (i, j)
+
+# output:
+# (0, 0)
+# (0, 1)
+# (5, 2) --> note: i been changed
+# (1, 0)
+# (1, 1)
+# (5, 2) --> note: i been changed
+# (2, 0)
+# (2, 1)
+# (5, 2) --> note: i been changed
+
 class Solution(object):
 
     def findCircleNum(self, M):
