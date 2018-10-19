@@ -44,4 +44,4 @@ class UnionFind(object):
             p, q = q, p
         self.id[p] = q
         self.size[p] += self.size[q]
-        self.count -= 1        
+        self.count -= 1
