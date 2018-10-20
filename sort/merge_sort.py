@@ -6,8 +6,7 @@ from random import randint
 def quick_sort(array, start, end):
     def partition():
         base = array[start]
-        left, right = start + 1, end
-        #done = False
+        left, right = start + 1, end - 1
         while left < right:
             while left <= right and array[left] <= base:
                 left += 1
@@ -25,7 +24,7 @@ def quick_sort(array, start, end):
 
     if start < end:
         mid = partition()
-        quick_sort(array, start, mid - 1)
+        quick_sort(array, start, mid)
         quick_sort(array, mid + 1, end)
 
 def merge_sort(array, start, end):
@@ -89,7 +88,7 @@ def main():
     merge = merge_sort(copy, 0, len(copy))
     print merge == sorted(array)
     copy = array[:]
-    quick_sort(copy, 0, len(copy) - 1)
+    quick_sort(copy, 0, len(copy))
     # print copy
     print copy == sorted(copy)
 
