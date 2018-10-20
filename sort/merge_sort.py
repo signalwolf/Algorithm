@@ -1,17 +1,32 @@
+# coding=utf-8
+
+
 from random import randint
 
-def quick_sort(array):
-    if not array: return []
-    if len(array) == 1: return [array[0]]
-    left, right = [], []
-    base = array[0]
-    for i in xrange(1, len(array)):
-        if array[i] > base:
-            right.append(array[i])
-        else:
-            left.append(array[i])
-    return quick_sort(left) + [base] + quick_sort(right)
+def quick_sort(array, start, end):
+    def partition():
+        base = array[start]
+        left, right = start + 1, end
+        done = False
+        while not done:
+            while left <= right and array[left] <= base:
+                left += 1
 
+            while right >= left and array[right] >= base:
+                right -= 1
+
+            if right < left:
+                done = True
+            else:
+                array[left], array[right] = array[right], array[left]
+
+        array[start], array[right] = array[right], array[start]
+        return right
+
+    if start < end:
+        mid = partition()
+        quick_sort(array, start, mid - 1)
+        quick_sort(array, mid + 1, end)
 
 def merge_sort(array, start, end):
     if start >= end: return []
@@ -32,7 +47,8 @@ def merge_sort(array, start, end):
     if j == len(right): res += left[i:]
     return res
 
-def bubble_sort(array):
+# 我觉得这个是selection sort，每次遍历我都在寻找第一小，第二小的number
+def selection_sort(array):
     res = array[::]
     for i in xrange(len(res)):
         for j in xrange(i + 1, len(res)):
@@ -40,8 +56,8 @@ def bubble_sort(array):
                 res[i], res[j] = res[j], res[i]
     return res
 
-# selection sort suitable for duplicated sets?
-def selection_sort(array):
+# 这个不知道是什么sort
+def temp_sort(array):
     res = [None] * len(array)
     for i in xrange(len(array)):
         index = 0
@@ -54,21 +70,34 @@ def selection_sort(array):
     # print res
     return res
 
+# Bubble sort就是通过不断的交换使得最小的或者最大的到list的最后
+def bubble_sort(array):
+    n = len(array)
+    for i in xrange(n):
+        for j in xrange(0,n - i - 1):
+            if array[j] > array[j + 1]:
+                array[j], array[j + 1] = array[j + 1], array[j]
+    return array
+
+# def quick_sort_with_random (array):
+
 
 def main():
     array =  arr_generator(1000, 0, 100)
     # print array
-    merge = merge_sort(array, 0, len(array))
+    copy = array[:]
+    merge = merge_sort(copy, 0, len(copy))
     print merge == sorted(array)
-    quick = quick_sort(array)
-    print quick == sorted(array)
-    bubble = bubble_sort(array)
+    copy = array[:]
+    quick_sort(copy, 0, len(copy) - 1)
+    # print copy
+    print copy == sorted(copy)
+
+    copy = array[:]
+    bubble = bubble_sort(copy)
+    # print bubble
+    # print sorted(array)
     print bubble == sorted(array)
-    # array = list(set(array))
-    # array += [array[-5]]
-    selection = selection_sort(array)
-    # print selection == sorted(selection)
-    print selection == sorted(array)
 
 def arr_generator(n, start, end):
     res = []
