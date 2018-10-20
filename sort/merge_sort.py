@@ -6,25 +6,28 @@ from random import randint
 def quick_sort(array, start, end):
     def partition():
         base = array[start]
-        left, right = start + 1, end - 1
-        while left < right:
+        left, right = start + 1, end
+        while left <= right:
             while left <= right and array[left] <= base:
                 left += 1
 
             while right >= left and array[right] > base:
                 right -= 1
 
-            if left < right:
+            # if right < left:
+            #     done = True
+            if left <= right:
                 array[left], array[right] = array[right], array[left]
-            else:
-                if left - right != 1: print left - right
 
         array[start], array[right] = array[right], array[start]
         return right
 
+    # print array, start, end
     if start < end:
+        pivot = start #randint(start, end)
+        array[pivot], array[start] = array[start], array[pivot]
         mid = partition()
-        quick_sort(array, start, mid)
+        quick_sort(array, start, mid - 1)
         quick_sort(array, mid + 1, end)
 
 def merge_sort(array, start, end):
@@ -82,21 +85,25 @@ def bubble_sort(array):
 
 
 def main():
-    array =  arr_generator(1000, 0, 100)
-    # print array
-    copy = array[:]
-    merge = merge_sort(copy, 0, len(copy))
-    print merge == sorted(array)
-    copy = array[:]
-    quick_sort(copy, 0, len(copy))
-    # print copy
-    print copy == sorted(copy)
+    tried = 0
+    while tried < 100:
+        array =  arr_generator(1000, 0, 100)
+        # print array
+        # array = [1, 2]
+        copy = array[:]
+        merge = merge_sort(copy, 0, len(copy))
+        #print merge == sorted(array)
+        copy = array[:]
+        quick_sort(copy, 0, len(copy) - 1)
+        # print copy
+        print copy == sorted(copy)
 
-    copy = array[:]
-    bubble = bubble_sort(copy)
-    # print bubble
-    # print sorted(array)
-    print bubble == sorted(array)
+        copy = array[:]
+        bubble = bubble_sort(copy)
+        # print bubble
+        # print sorted(array)
+        #print bubble == sorted(array)
+        tried -= 1
 
 def arr_generator(n, start, end):
     res = []
