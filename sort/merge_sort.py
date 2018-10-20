@@ -7,18 +7,18 @@ def quick_sort(array, start, end):
     def partition():
         base = array[start]
         left, right = start + 1, end
-        done = False
-        while not done:
+        #done = False
+        while left < right:
             while left <= right and array[left] <= base:
                 left += 1
 
-            while right >= left and array[right] >= base:
+            while right >= left and array[right] > base:
                 right -= 1
 
-            if right < left:
-                done = True
-            else:
+            if left < right:
                 array[left], array[right] = array[right], array[left]
+            else:
+                if left - right != 1: print left - right
 
         array[start], array[right] = array[right], array[start]
         return right
