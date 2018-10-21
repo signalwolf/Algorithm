@@ -76,7 +76,7 @@ def temp_sort(array):
 def bubble_sort(array):
     n = len(array)
     for i in xrange(n):
-        for j in xrange(0,n - i - 1):
+        for j in xrange(0, n - i - 1):
             if array[j] > array[j + 1]:
                 array[j], array[j + 1] = array[j + 1], array[j]
     return array
@@ -86,7 +86,7 @@ def bubble_sort(array):
 
 def main():
     tried = 0
-    while tried < 100:
+    while tried < 10:
         array =  arr_generator(1000, 0, 100)
         # print array
         # array = [1, 2]
@@ -103,7 +103,7 @@ def main():
         # print bubble
         # print sorted(array)
         #print bubble == sorted(array)
-        tried -= 1
+        tried += 1
 
 def arr_generator(n, start, end):
     res = []
