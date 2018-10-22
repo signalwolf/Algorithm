@@ -2,8 +2,9 @@
 
 from collections import defaultdict
 from heapq import *
-def min_spanning_tree(start, graph):
+def min_spanning_tree(graph):
     
+
 
 
 
