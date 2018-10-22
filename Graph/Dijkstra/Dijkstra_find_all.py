@@ -17,10 +17,11 @@ from collections import defaultdict
 
 def main(start, graph):
     distance = [False] * (len(graph))
+    # distance[0] = 0
     heap = [[0, start]]
     while heap:
         dis, curr = heappop(heap)
-        if distance[curr]: continue
+        if distance[curr] is 0 or distance[curr]: continue
         distance[curr] = dis
         for ngr in graph[curr].keys():
             if not distance[ngr]:
@@ -29,6 +30,19 @@ def main(start, graph):
         print distance
     return distance
 
+
+def main2 (start, graph):
+    heap = [[0, start]]
+    dis = {}
+    while heap:
+        curr_dis, curr_node = heappop(heap)
+        if curr_node in dis: continue
+        dis[curr_node] = curr_dis
+        for ngb in graph[curr_node]:
+            if ngb not in dis:
+                next_dis = graph[curr_node][ngb]
+                heappush(heap, [curr_dis + next_dis, ngb])
+    return dis
 
 graph = {
     0:{1:4, 7:8},
@@ -43,6 +57,7 @@ graph = {
 }
 
 print main(0, graph)
+print main2(0, graph)
 # print dijkstra
 
 # Output:
