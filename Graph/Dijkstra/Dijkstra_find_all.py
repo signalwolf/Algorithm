@@ -21,7 +21,7 @@ def main(start, graph):
     heap = [[0, start]]
     while heap:
         dis, curr = heappop(heap)
-        if distance[curr] is 0 or distance[curr]: continue
+        if distance[curr] is not False: continue
         distance[curr] = dis
         for ngr in graph[curr].keys():
             if not distance[ngr]:
@@ -46,7 +46,7 @@ def main2 (start, graph):
 
 graph = {
     0:{1:4, 7:8},
-    1:{0:4,7:8,2:8},
+    1:{0:4,7:11,2:8},
     2:{1:8, 8:2, 3:7},
     3:{2:7,5:14,4:9},
     4:{3:9, 5:10},
@@ -59,6 +59,33 @@ graph = {
 print main(0, graph)
 print main2(0, graph)
 # print dijkstra
+
+def buildGraph(graph):
+    N = len(graph)
+    ans = [[0 for _ in xrange(N)] for _ in xrange(N)]
+    for source_node in graph:
+        for target_node, distance in graph[source_node].items():
+            ans[source_node][target_node] = distance
+            ans[target_node][source_node] = distance
+    return ans
+
+
+def dijkstra_matrix(start, graph):
+    dis = [False] * len(graph)
+    heap = [[0, start]]
+    while heap:
+        curr_dis, curr_node = heappop(heap)
+        if dis[curr_node] is not False: continue
+        dis[curr_node] = curr_dis
+        for i in xrange(len(graph)):
+            if i == curr_node: continue
+            if graph[curr_node][i]:
+                if dis[i] is False:
+                    heappush(heap, [graph[curr_node][i] + curr_dis, i])
+    return dis
+
+graphmatrix = buildGraph(graph)
+print dijkstra_matrix(0, graphmatrix)
 
 # Output:
 #####################################################
