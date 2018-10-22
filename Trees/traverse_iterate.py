@@ -23,7 +23,6 @@ def inorderTraversal(self, root):
     :type root: TreeNode
     :rtype: List[int]
     """
-    visited = {}
     stack, res = [], []
     curr = root
     while curr or stack:
