@@ -58,7 +58,7 @@ def dfs(graph, node, visited, stack):
 def topological_sort(graph, n):
     visited = [False] * n
     stack = deque([])
-    for i in [2, 0,1,3,4,5]:
+    for i in [0,1,2,3,4,5]:
         if not visited[i]:
             path = dfs (graph, i, visited, stack)
             print i, path, visited
