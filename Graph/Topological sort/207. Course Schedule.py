@@ -1,6 +1,4 @@
 from collections import deque, defaultdict
-
-
 class Solution(object):
     def buildGraph(self, edges):
         graph = defaultdict(set)
