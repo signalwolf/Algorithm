@@ -33,3 +33,5 @@
 #           在每次partition之前，我们先将start 处的值与random gengerate的pivot的node的值互换。之后直接使用partitoon就好
 #       写来写去，还是有错误，在sort的时候一定要用end 包含的模式。
 # 12. dictionary的key 以及 value是list 而不是set
+# 13. Lambda的使用
+# 14. 二维数组的创立
