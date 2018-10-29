@@ -38,3 +38,4 @@
 # 13. Lambda的使用 sorted(list, key = lambda x: x.start)
 # 14. 二维数组的创立, 记住内部的是列，外部的是行。
 # 15. Tries 的 delete需要再看看。
+# good luck
