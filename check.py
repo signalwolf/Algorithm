@@ -1,2 +1,2 @@
-dicts = {1:2, 2:3}
-print type(dicts.items())
+grid = [[0 for _ in xrange(4)] for _ in xrange(3)]
+print grid
