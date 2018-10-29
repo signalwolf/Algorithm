@@ -7,11 +7,11 @@
 # 3. Question: does empty dictionary consider to be False? --> Yes
 # 4. 思考方法：
 #    面对复杂的问题，思考一个更加简单的问题并且从中得到思路。例如310。
-#    还要记得说
+#    还要记得说自己提供的解法是不是over kill了这个问题。
 # 5. 不要忘记了initial node 的方法
 # 6. Tree delete node 的方法忘记了
-# 7. Quick sort中的random shuffle
-# 8. Very careful about 0, it is False/None as well.
+# 7. Quick sort中的random shuffle。 见 point 11
+# 8. Very careful about 0, it is False/None as well. 在有0出现的情况下用 is 来判断而不要直接判断。
 # 9. 使用while语句来遍历整个node的情况。
 # 10. Union Find. 记住 ids 和 size 以及 path compression
 # 11. Quick sort的in place的算法以及randomized的方法：
