@@ -1,0 +1,6 @@
+# coding=utf-8
+
+# reference： https://kopu.chat/2017/08/19/遞迴-recursive-介紹與經典題型/
+
+1. 任何的recursive都可以用iterative来解决
+2. recursive的时候，其实每层都
