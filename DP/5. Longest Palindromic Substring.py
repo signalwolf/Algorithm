@@ -1,5 +1,28 @@
 # coding=utf-8
 
+# 这道题用DP解不是最优，但是也是一个solution了
+# dp[i][j] 代表 s[i : j + 1] 是不是 palindrom,
+# 如果是的话，我们就计算器其长度
+# 故而 dp[i][j] == True if dp[i + 1][j - 1] is True and s[i] == s[j]
+
+# Better DP solution: 2256 ms
+class Solution(object):
+    def longestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        dp = [[0] * len(s) for i in range(len(s))]
+        ans = ""
+        max_length = 0
+        for i in range(len(s) - 1, -1, -1):
+            for j in range(i, len(s)):
+                if s[i] == s[j] and (j - i < 3 or dp[i + 1][j - 1] == 1):
+                    dp[i][j] = 1
+                    if ans == "" or max_length < j - i + 1:
+                        ans = s[i:j + 1]
+                        max_length = j - i + 1
+        return ans
 
 # my solution: 4972 ms (严重超时)
 class Solution(object):
