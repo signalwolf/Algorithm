@@ -20,6 +20,7 @@ class Solution(object):
 
 
 # BFS solution: 228ms, 81%
+import math
 from collections import deque
 class Solution(object):
     def numSquares(self, n):
