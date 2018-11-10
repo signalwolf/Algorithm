@@ -1,14 +1,4 @@
-from heapq import heappush, heappop, heapify
 
-A = [
-    [1, 'k'],
-    [1, 'b'],
-    [1, 'z'],
-    [1, 'd'],
-    [2, 'a']
-]
-
-heapify(A)
-
-while A:
-    print heappop(A)
+s = [[]] * 3
+s[0] = [1,2]
+print s
