@@ -1,2 +1,2 @@
-print -5/2
-print 5/2
+a = '1'
+print a.split('.')
