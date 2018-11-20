@@ -1,5 +1,5 @@
-from bisect import bisect_left, bisect_right
+from collections import deque
 
-A = range(0, 20, 2)
-#print bisect_left(A, 100), A[bisect_left(A, 100)]
+A = deque([1,2,3,3,4,5,6,7])
+A.remove(3)
 print A
