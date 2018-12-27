@@ -1,2 +1,3 @@
-dicts = {1 : 2, 2:3}
-print type(dicts.keys())
+tmp = [1,2,3]
+for index, value in enumerate(tmp):
+    print index, value
