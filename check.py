@@ -1,10 +1,8 @@
-from hashlib import md5
-val = '10'
-m = md5(val)
-print m
-tmp = m.hexdigest()
-print tmp
-print type(tmp), len(tmp)
-print int(tmp, 16)
-print int('10')
-print int('10', 10)
+from heapq import heappop, heappush
+from random import randint
+heap = []
+for i in xrange(10):
+    heappush(heap, (1, randint(1, 10), randint(1, 10)))
+
+while heap:
+    print heappop(heap)
