@@ -7,14 +7,34 @@ def dijkstras(start, end, graph):
     while heap:
         dis, curr, path = heappop(heap)
         if distance[curr]: continue
-        if curr == end: return path
+        if curr == end: return distance
         distance[curr] = dis
         for ngr in graph[curr].keys():
             if not distance[ngr]:
                 ngr_dis = dis + graph[curr][ngr]
                 heappush(heap, [ngr_dis, ngr, path + [ngr]])
-        print distance
+        # print distance
     return distance
+
+def facebook(start, end, graph):
+    distance = [None] * len(graph)
+    heap = [[0, start]]
+    while heap:
+        print heap
+        dis, curr = heappop(heap)
+        if distance[curr]:
+            continue
+        distance[curr] = dis
+        if curr == end:
+            return distance
+
+        for ngb in graph[curr]:
+            if distance[ngb] is None:
+                heappush(heap, [dis + graph[curr][ngb], ngb])
+    return -1
+
+
+
 
 
 graph = {
@@ -30,6 +50,7 @@ graph = {
 }
 
 print dijkstras(0,8, graph)
+print facebook(0,8, graph)
 # print dijkstra
 
 # Output:

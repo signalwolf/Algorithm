@@ -22,6 +22,18 @@ def min_spanning_tree(start, graph):
         # print parents, heap
     return parents
 
+def facebook(start, graph):
+    heap = [[0, start, start]]
+    parents = {}
+    while heap:
+        dis, curr, prev = heappop(heap)
+        parents[curr] = prev
+        for ngb in graph[curr].keys():
+            if ngb not in parents:
+                heappush(heap, [graph[curr][ngb], ngb, curr])
+    return parents
+
+
 
 # def min_spanning_tree2(start, graph):
 #     parents = {}
@@ -57,4 +69,5 @@ graph = {
 }
 
 print min_spanning_tree(0, graph)
+print facebook(0, graph)
 # print min_spanning_tree2(0, graph)

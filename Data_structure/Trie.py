@@ -7,7 +7,12 @@ class Tries(object):
         for i, word in enumerate(wordList):
             curr_dict = self.tries
             for c in word:
-                curr_dict = curr_dict.setdefault(c, {})
+
+                if c not in curr_dict:
+                    curr_dict[c] = {}
+                curr_dict = curr_dict[c]
+
+                # curr_dict = curr_dict.setdefault(c, {})
             curr_dict['end'] = i
             self.counter += 1
 

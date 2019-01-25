@@ -31,3 +31,14 @@ class Solution(object):
             if curr.left:
                 stack.append(curr.left)
         return res
+
+def facebook(root):
+    res, stack = [], [root]
+    while stack:
+        currNode = stack.pop()
+        res.append(currNode.val)
+        if currNode.right:
+            stack.append(currNode.right)
+        if currNode.left:
+            stack.append(currNode.left)
+    return res

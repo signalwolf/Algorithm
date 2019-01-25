@@ -38,3 +38,14 @@ class Solution(object):
             if curr.right:
                 stack.append(curr.right)
         return res[::-1]
+
+def facebook(root):
+    res, stack = [], [root]
+    while stack:
+        curr = stack.pop()
+        res.append(curr.val)
+        if curr.left:
+            stack.append(curr.left)
+        if curr.right:
+            stack.append(curr.right)
+    return res[::-1]
